@@ -32,7 +32,7 @@ private:
   int dir_;
   std::string key_;
   std::string iv_;
-  EVP_CIPHER_CTX ctx_;
+  EVP_CIPHER_CTX *ctx_;
   const EVP_CIPHER *cryptoAlgorithm_;
 };
 
